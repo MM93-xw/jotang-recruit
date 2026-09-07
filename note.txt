@@ -1,0 +1,26 @@
+git学习笔记
+
+git命令：
+git config --global --list :查看配置信息
+git config --global user.name "xxx" :配置用户名
+git config --global user.email "xxx" :配置用户邮箱
+
+git init
+git remote add origin https://github.com/MM93-xw/testing.git
+git add "xxx"
+git add .
+git commit -m "xxx"
+git push
+git log ：查询历史提交信息
+
+遗留问题：
+1.git 邮箱设置格式
+2.git仓库具体应用
+3.diff的应用与认读
+4.master分支
+5.README.md是什么
+
+学习记录：
+git下载（官网下载最新版）---git配置（用户名和邮箱）---git仓库建立---文件管理（add commit）---
+文件修改并再次上传---diff尝试---github账户建立---github空仓库建立---git本地与远端建立联系---
+git push并在github查看确认
