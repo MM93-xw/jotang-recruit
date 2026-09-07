@@ -9,18 +9,30 @@ git init
 git remote add origin https://github.com/MM93-xw/testing.git
 git add "xxx"
 git add .
-git commit -m "xxx"
+git commit -m "xxx" (不要忘）
 git push
 git log ：查询历史提交信息
+git rm ：取消某文件管理
 
+git remote -v：验证是成功添加远程地址
+初次推送未远程建立联系的仓库：git push -u origin master
+非初次推送：                              git push origin master
+
+退出Vim编辑器：Ese -- :q! -- Enter
+完成Vim编辑保存并退出：编辑 -- Ese -- :wq -- Enter
+ 
 遗留问题：
 1.git 邮箱设置格式
 2.git仓库具体应用
 3.diff的应用与认读
 4.master分支
 5.README.md是什么
+6.仓库名（github内设置的名字）与别名（git本地认读的名字）
+7.如何只提交被管理文件中的部分只某个仓库（可以选择push仓库，但要将本地仓库内所有未提交文件提交）
 
 学习记录：
 git下载（官网下载最新版）---git配置（用户名和邮箱）---git仓库建立---文件管理（add commit）---
 文件修改并再次上传---diff尝试---github账户建立---github空仓库建立---git本地与远端建立联系---
 git push并在github查看确认
+
+push流程：建立github仓库---添加远程仓库---暂存后管理---push（注明提交对应仓库与分支）
