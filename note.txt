@@ -6,20 +6,31 @@ git config --global user.name "xxx" :配置用户名
 git config --global user.email "xxx" :配置用户邮箱
 
 git init
-git remote add origin https://github.com/MM93-xw/testing.git
 git add "xxx"
 git add .
+git status
 git commit -m "xxx" (不要忘）
 git push
 git log ：查询历史提交信息
 git rm ：取消某文件管理
+git push -f ：强制推送覆盖远程文件（-f:force）
 
-git remote -v：验证是成功添加远程地址
-初次推送未远程建立联系的仓库：git push -u origin master
-非初次推送：                              git push origin master
+git remote -v：查看所有远端仓库的别名和地址
+初次推送新远程建立联系的仓库：git push -u origin master（-u ：--set-upstream用于追踪）
+非初次推送：                                    git push (origin) master
+添加远端关联：git remote add origin https://github.com/MM93-xw/testing.git
+取消远端关联：git remote remove
 
-退出Vim编辑器：Ese -- :q! -- Enter
-完成Vim编辑保存并退出：编辑 -- Ese -- :wq -- Enter
+退出Vim编辑器：Esc -- :q! -- Enter
+完成Vim编辑保存并退出：编辑 -- Esc -- :wq -- Enter
+
+diff/log后出现分页器：q退出/空格向下翻一页/回车下一行
+一次性展示所有内容：git --no-pager log/git --no-pager diff
+
+git branch:查看当前分支
+git branch test：创建分支test
+git checkout test：切换到分支test
+git checkout -b test：创建并立即切换到新分支
  
 遗留问题：
 1.git 邮箱设置格式
@@ -35,4 +46,5 @@ git下载（官网下载最新版）---git配置（用户名和邮箱）---git�
 文件修改并再次上传---diff尝试---github账户建立---github空仓库建立---git本地与远端建立联系---
 git push并在github查看确认
 
-push流程：建立github仓库---添加远程仓库---暂存后管理---push（注明提交对应仓库与分支）
+push流程：建立github仓库---添加远程仓库---暂存后提交---push（注明提交对应仓库与分支）
+分支：相当于复制一份文件出来单独进行更改
